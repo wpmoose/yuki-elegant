@@ -2,13 +2,13 @@
 /**
  * Theme starter content
  *
- * @package Yuki Graceful
+ * @package Yuki Elegant
  */
 
 //
 // Starter content
 //
-if ( ! function_exists( 'yuki_graceful_starter_content' ) ) {
+if ( ! function_exists( 'yuki_elegant_starter_content' ) ) {
 	/**
 	 * Change starter content
 	 *
@@ -16,13 +16,13 @@ if ( ! function_exists( 'yuki_graceful_starter_content' ) ) {
 	 *
 	 * @return mixed
 	 */
-	function yuki_graceful_starter_content( $content ) {
+	function yuki_elegant_starter_content( $content ) {
 		return array(
 			'widgets'   => $content['widgets'],
 			'posts'     => array(
 				'home' => array(
 					'post_type'    => 'page',
-					'post_title'   => __( 'Home', 'yuki-graceful' ),
+					'post_title'   => __( 'Home', 'yuki-elegant' ),
 					'post_content' => '',
 				),
 				'about',
@@ -31,7 +31,7 @@ if ( ! function_exists( 'yuki_graceful_starter_content' ) ) {
 			),
 			'nav_menus' => array(
 				'yuki_header_el_menu_1' => array(
-					'name'  => __( 'Top Bar Menu', 'yuki-graceful' ),
+					'name'  => __( 'Top Bar Menu', 'yuki-elegant' ),
 					'items' => array(
 						'link_home',
 						'page_about',
@@ -41,7 +41,7 @@ if ( ! function_exists( 'yuki_graceful_starter_content' ) ) {
 					),
 				),
 				'yuki_header_el_menu_2' => array(
-					'name'  => __( 'Primary Menu', 'yuki-graceful' ),
+					'name'  => __( 'Primary Menu', 'yuki-elegant' ),
 					'items' => array(
 						'link_home',
 						'page_about',
@@ -50,7 +50,7 @@ if ( ! function_exists( 'yuki_graceful_starter_content' ) ) {
 					),
 				),
 				'yuki_footer_el_menu'   => array(
-					'name'  => __( 'Footer Menu', 'yuki-graceful' ),
+					'name'  => __( 'Footer Menu', 'yuki-elegant' ),
 					'items' => array(
 						'link_home',
 						'page_about',
@@ -67,37 +67,37 @@ if ( ! function_exists( 'yuki_graceful_starter_content' ) ) {
 		);
 	}
 }
-add_filter( 'yuki_starter_content', 'yuki_graceful_starter_content' );
+add_filter( 'yuki_starter_content', 'yuki_elegant_starter_content' );
 
 //
 // Homepage design
 //
 
-if ( ! function_exists( 'yuki_graceful_homepage_builder_id' ) ) {
+if ( ! function_exists( 'yuki_elegant_homepage_builder_id' ) ) {
 	/**
 	 * Change default homepage builder id
 	 *
 	 * @return string
 	 */
-	function yuki_graceful_homepage_builder_id() {
-		return 'yuki_graceful_homepage_builder';
+	function yuki_elegant_homepage_builder_id() {
+		return 'yuki_elegant_homepage_builder';
 	}
 }
-add_filter( 'yuki_homepage_builder_id', 'yuki_graceful_homepage_builder_id' );
+add_filter( 'yuki_homepage_builder_id', 'yuki_elegant_homepage_builder_id' );
 
-if ( ! function_exists( 'yuki_graceful_homepage_content_spacing' ) ) {
+if ( ! function_exists( 'yuki_elegant_homepage_content_spacing' ) ) {
 	/**
 	 * Change default content spacing for homepage
 	 *
 	 * @return string
 	 */
-	function yuki_graceful_homepage_content_spacing() {
+	function yuki_elegant_homepage_content_spacing() {
 		return '24px';
 	}
 }
-add_filter( 'yuki_homepage_content_spacing_default_value', 'yuki_graceful_homepage_content_spacing' );
+add_filter( 'yuki_homepage_content_spacing_default_value', 'yuki_elegant_homepage_content_spacing' );
 
-if ( ! function_exists( 'yuki_graceful_homepage_heading' ) ) {
+if ( ! function_exists( 'yuki_elegant_homepage_heading' ) ) {
 	/**
 	 * Generate heading element
 	 *
@@ -107,7 +107,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_heading' ) ) {
 	 *
 	 * @return array
 	 */
-	function yuki_graceful_homepage_heading( $title, $sub_title = '', $settings = [] ) {
+	function yuki_elegant_homepage_heading( $title, $sub_title = '', $settings = [] ) {
 		return [
 			'id'       => 'heading',
 			'settings' => wp_parse_args( $settings, [
@@ -137,13 +137,13 @@ if ( ! function_exists( 'yuki_graceful_homepage_heading' ) ) {
 	}
 }
 
-if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
+if ( ! function_exists( 'yuki_elegant_homepage_design' ) ) {
 	/**
 	 * Override default homepage design
 	 *
 	 * @return array
 	 */
-	function yuki_graceful_homepage_design() {
+	function yuki_elegant_homepage_design() {
 		return [
 			// Heading
 			[
@@ -164,7 +164,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							'source' => [
 								'x'   => 0.5,
 								'y'   => 0.5,
-								'url' => yuki_graceful_image_url( 'heading-background.png' ),
+								'url' => yuki_elegant_image_url( 'heading-background.png' ),
 							]
 						]
 					],
@@ -175,7 +175,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							[
 								'id'       => 'heading',
 								'settings' => [
-									'title'            => __( 'The art of writing is the art of discovering what you believe.', 'yuki-graceful' ),
+									'title'            => __( 'The art of writing is the art of discovering what you believe.', 'yuki-elegant' ),
 									'sub-title'        => '',
 									'title-tag'        => 'h1',
 									'alignment'        => 'center',
@@ -223,7 +223,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							'source' => [
 								'x'   => 0.5,
 								'y'   => 0.5,
-								'url' => yuki_graceful_image_url( 'sub-heading-background.png' ),
+								'url' => yuki_elegant_image_url( 'sub-heading-background.png' ),
 							]
 						]
 					],
@@ -234,7 +234,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							[
 								'id'       => 'heading',
 								'settings' => [
-									'title'            => __( 'Latest Posts', 'yuki-graceful' ),
+									'title'            => __( 'Latest Posts', 'yuki-elegant' ),
 									'sub-title'        => '',
 									'title-tag'        => 'h3',
 									'alignment'        => 'center',
@@ -287,9 +287,9 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 										'mobile'  => 1,
 									],
 									'items-gap'                       => '48px',
-									'card_background'                 => yuki_graceful_base_100_background(),
-									'card_border'                     => yuki_graceful_card_border(),
-									'card_shadow'                     => yuki_graceful_card_shadow(),
+									'card_background'                 => yuki_elegant_base_100_background(),
+									'card_border'                     => yuki_elegant_card_border(),
+									'card_shadow'                     => yuki_elegant_card_shadow(),
 									'yuki_el_tax_style_cats'          => 'badge',
 									'yuki_el_tax_badge_bg_color_cats' => [
 										'initial' => 'var(--yuki-primary-color)',
@@ -330,7 +330,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							'source' => [
 								'x'   => 0.5,
 								'y'   => 0.5,
-								'url' => yuki_graceful_image_url( 'sub-heading-background.png' ),
+								'url' => yuki_elegant_image_url( 'sub-heading-background.png' ),
 							]
 						]
 					],
@@ -341,7 +341,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							[
 								'id'       => 'heading',
 								'settings' => [
-									'title'            => __( 'Top pick for you', 'yuki-graceful' ),
+									'title'            => __( 'Top pick for you', 'yuki-elegant' ),
 									'sub-title'        => '',
 									'title-tag'        => 'h3',
 									'alignment'        => 'center',
@@ -416,7 +416,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							'source' => [
 								'x'   => 0.5,
 								'y'   => 0.5,
-								'url' => yuki_graceful_image_url( 'sub-heading-background.png' ),
+								'url' => yuki_elegant_image_url( 'sub-heading-background.png' ),
 							]
 						]
 					],
@@ -427,7 +427,7 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 							[
 								'id'       => 'heading',
 								'settings' => [
-									'title'            => __( 'You may also like', 'yuki-graceful' ),
+									'title'            => __( 'You may also like', 'yuki-elegant' ),
 									'sub-title'        => '',
 									'title-tag'        => 'h3',
 									'alignment'        => 'center',
@@ -561,4 +561,4 @@ if ( ! function_exists( 'yuki_graceful_homepage_design' ) ) {
 		];
 	}
 }
-add_filter( 'yuki_graceful_homepage_builder_default_value', 'yuki_graceful_homepage_design' );
+add_filter( 'yuki_elegant_homepage_builder_default_value', 'yuki_elegant_homepage_design' );

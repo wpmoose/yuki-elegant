@@ -1,4 +1,4 @@
-=== Yuki Graceful ===
+=== Yuki Elegant ===
 Contributors: ibllex
 Author: WP Moose
 Requires at least: WordPress 5.2+
@@ -11,11 +11,11 @@ Tags: news, blog, portfolio, grid-layout, one-column, two-columns, three-columns
 
 == Description ==
 
-Multi-purpose and Customizable Free WordPress Blog Theme. based on the modern and highly customizable Yuki multipurpose WordPress theme. You can fully customize your site with rich customize options. It is perfect for personal bloggers and content publishers.
+A modern, elegant and customizable free WordPress blog theme. You can fully customize your website with rich customization options. It is perfect for personal bloggers and content publishers.
 
 == Copyright ==
 
-Yuki Graceful is licensed under the GNU General Public License v2 or later
+Yuki Elegant is licensed under the GNU General Public License v2 or later
 
 More details [here](http://www.gnu.org/licenses/gpl-2.0.html).
 
